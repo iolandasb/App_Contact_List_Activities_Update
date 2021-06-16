@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TituloAgenda">
+        <item name="android:layout_width">@dimen/width</item>
+        <item name="android:layout_height">@dimen/height</item>
+        <item name="android:text">@string/titulo</item>
+        <item name="android:textColor">@color/textos</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CaixasHint">
+        <item name="android:layout_width">@dimen/width</item>
+        <item name="android:layout_height">@dimen/height</item>
+        <item name="android:textColor">@color/hints</item>
+        <item name="android:textColorHint">@color/hints</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+    </style>
+
+    <style name="CaixaHintPesquisar">
+        <item name="android:layout_width">268dp</item>
+        <item name="android:layout_height">@dimen/height</item>
+        <item name="android:hint">@string/hint_pesquisar</item>
+        <item name="android:textColor">@color/hints</item>
+        <item name="android:textColorHint">@color/hints</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+
+    <style name="Botoes">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textos</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CaixaCadastros">
+        <item name="android:layout_width">@dimen/width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textos</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">48dp</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:paddingBottom">@dimen/paddingBottom</item>
+    </style>
+
+    <style name="RadioButtons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textos</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextoRadioButtons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:text">@string/tipo_contato</item>
+        <item name="android:textColor">@color/textos</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">24dp</item>
+    </style>
+
+</resources>

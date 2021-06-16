@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">Exercicio_Aula_13</string>
+    <string name="titulo">Minha Agenda</string>
+    <string name="hint_nome">Nome</string>
+    <string name="hint_celular">Celular</string>
+    <string name="tipo_contato">Tipo de Contato</string>
+    <string name="pessoal">Pessoal</string>
+    <string name="trabalho">Trabalho</string>
+    <string name="hint_referencia">Referência</string>
+    <string name="botao_salvar">SALVAR</string>
+    <string name="hint_pesquisar">Pesquisar</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="botao_limpar">LIMPAR PESQUISA</string>
+    <string name="botao_IrCadastro">Cadastrar Novo Contato</string>
+
+</resources>

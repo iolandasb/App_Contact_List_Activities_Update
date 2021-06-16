@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".SecondActivity"
+        tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TituloAgenda"
+        android:background="@drawable/background"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        style="@style/CaixasHint"
+        android:backgroundTint="#FFFFFF"
+        android:hint="@string/hint_nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edtCelular"
+        style="@style/CaixasHint"
+        android:backgroundTint="#FFFFFF"
+        android:hint="@string/hint_celular"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNome" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="@dimen/width"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/marginTop"
+        android:background="@drawable/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCelular">
+
+        <RadioGroup
+            android:id="@+id/rdgTipoCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="313dp">
+
+            <EditText
+                style="@style/TextoRadioButtons"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal" />
+
+            <RadioButton
+                android:id="@+id/rdPessoal"
+                style="@style/RadioButtons"
+                android:buttonTint="@color/textos"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/pessoal" />
+
+            <RadioButton
+                android:id="@+id/rdTrabalho"
+                style="@style/RadioButtons"
+                android:buttonTint="@color/textos"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/trabalho" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtReferencia"
+        style="@style/CaixasHint"
+        android:backgroundTint="@color/hints"
+        android:hint="@string/hint_referencia"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        style="@style/Botoes"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/icones"
+        android:text="@string/botao_salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtReferencia" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
